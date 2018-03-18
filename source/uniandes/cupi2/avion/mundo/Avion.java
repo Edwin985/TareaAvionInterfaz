@@ -1,20 +1,10 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación 
- * Licenciado bajo el esquema Academic Free License version 2.1 
- *
- * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
- * Ejercicio: n3_avion
- * Autor: Equipo Cupi2 2017
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
- */
 package uniandes.cupi2.avion.mundo;
 
 import uniandes.cupi2.avion.mundo.Silla.Clase;
 import uniandes.cupi2.avion.mundo.Silla.Ubicacion;
 
 /**
- * Avión de pasajeros.
+ * AviÃ³n de pasajeros.
  */
 public class Avion
 {
@@ -23,12 +13,12 @@ public class Avion
     // -----------------------------------------------------------------
 
     /**
-     * Número de sillas ejecutivas.
+     * NÃºmero de sillas ejecutivas.
      */
     public final static int SILLAS_EJECUTIVAS = 8;
 
     /**
-     * Número de sillas económicas.
+     * NÃºmero de sillas econÃ³micas.
      */
     public final static int SILLAS_ECONOMICAS = 42;
 
@@ -37,13 +27,13 @@ public class Avion
     // -----------------------------------------------------------------
 
     /**
-     * Sillas de la clase ejecutiva del avión.
+     * Sillas de la clase ejecutiva del aviÃ³n.
      */
 
     private Silla[] sillasEjecutivas;
 
     /**
-     * Sillas de la clase económica del avión.
+     * Sillas de la clase econÃ³mica del aviÃ³n.
      */
     private Silla[] sillasEconomicas;
 
@@ -52,8 +42,8 @@ public class Avion
     // -----------------------------------------------------------------
 
     /**
-     * Construye el avión. <br>
-     * <b>post: </b> Se inicializan las listas de sillas ejecutivas y económicas.
+     * Construye el aviÃ³n. <br>
+     * <b>post: </b> Se inicializan las listas de sillas ejecutivas y econÃ³micas.
      */
     public Avion( )
     {
@@ -62,7 +52,7 @@ public class Avion
         // Crea las sillas ejecutivas
         sillasEjecutivas = new Silla[SILLAS_EJECUTIVAS];
 
-        // Crea las sillas económicas
+        // Crea las sillas econÃ³micas
         sillasEconomicas = new Silla[SILLAS_ECONOMICAS];
 
         sillasEjecutivas[ 0 ] = new Silla( 1, Clase.EJECUTIVA, Ubicacion.VENTANA );
@@ -90,8 +80,8 @@ public class Avion
         }
     }
     /**
-     * Retorna las sillas ejecutivas del avión.
-     * @return Sillas ejecutivas del avión.
+     * Retorna las sillas ejecutivas del aviÃ³n.
+     * @return Sillas ejecutivas del aviÃ³n.
      */
     public Silla[] obtenerSillasEjecutivas( )
     {
@@ -99,8 +89,8 @@ public class Avion
     }
 
     /**
-     * Retorna las sillas económicas del avión.
-     * @return Sillas económicas del avión.
+     * Retorna las sillas econÃ³micas del aviÃ³n.
+     * @return Sillas econÃ³micas del aviÃ³n.
      */
     public Silla[] obtenerSillasEconomicas( )
     {
